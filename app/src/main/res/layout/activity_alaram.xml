@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_of_ui"
+    tools:context=".alaram">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="Alaram"
+        android:id="@+id/main_heading"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="40dp"
+        android:padding="15dp"
+        android:layout_marginTop="130dp"
+
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+
+        <EditText
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/hour"
+            android:hint="Hour(24Hr)"/>
+        <EditText
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/min"
+            android:hint="Minutes"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/setAlaram_btn"
+
+                android:text="SET ALARAM"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

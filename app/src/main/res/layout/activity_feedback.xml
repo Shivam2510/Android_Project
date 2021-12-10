@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FeedBack - Form"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:shadowColor="#FF9800"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/maintext"
+
+
+        />
+
+    <ScrollView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:paddingBottom="10dp"
+                android:text="SERVICE"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                style="@style/headerTextStyle"
+
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:text="QUALITY"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                style="@style/headerTextStyle"
+
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:text="APP RATING"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                style="@style/headerTextStyle"
+
+                />
+
+            <RatingBar
+                android:id="@+id/ratingbar2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.01" />
+
+            <EditText
+                android:id="@+id/message_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:inputType="textCapWords"
+                android:hint="Enter Message"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

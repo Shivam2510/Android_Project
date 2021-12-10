@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Search"
+        android:id="@+id/search_icon"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Main Menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_more_vert_24">
+
+        <menu>
+
+            <item
+                android:title="FeedBack"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                android:id="@+id/feedback"
+                />
+            <item
+                android:title="Alarm"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_alarm_add_24"
+                android:id="@+id/about"
+                />
+
+
+
+
+        </menu>
+
+
+    </item>
+</menu>

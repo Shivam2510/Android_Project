@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_of_ui"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="#EF6021"
+        android:id="@+id/lv"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="280dp"-->
+<!--            android:onClick="mainCall"-->
+<!--            android:text="+"/>-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="341dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:onClick="mainCall"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
